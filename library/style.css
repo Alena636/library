@@ -25,3 +25,48 @@ img {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+
+.header__logo-title {
+  font-family: Forum;
+  line-height: 3.1rem;
+  letter-spacing: .6px;
+  word-wrap: break-word;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.navigation__list-item {
+  font-size: 1.25rem;
+  line-height: 3.1rem;
+  word-wrap: break-word;
+}
+
+.navigation__list-item-link {
+  text-decoration: none;
+  color: white;
+  transition: .6s;
+}
+
+.navigation__list-item-link:hover {
+  color: #BB945F;
+}
