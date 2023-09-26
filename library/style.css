@@ -24,6 +24,10 @@ img {
 
 body {
   font-family: 'Inter', sans-serif;
+  background-image: url(../library/assets/img/background-library.jpg), linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0%, rgba(18.33, 18.33, 21.25, 0.10) 100%);
+  background-size: 100%;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -34,11 +38,10 @@ body {
   align-items: center;
   justify-content: space-between;
   color: white;
-  background-color: black;
 }
 
 .header__logo-title {
-  font-family: Forum;
+  font-family: 'Forum';
   line-height: 3.1rem;
   letter-spacing: .6px;
   word-wrap: break-word;
@@ -69,4 +72,24 @@ body {
 
 .navigation__list-item-link:hover {
   color: #BB945F;
+}
+
+.section__welcome {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.welcome-title {
+  width: 520px;
+  margin-top: 25vh;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Forum';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 3.1rem;
+  word-wrap: break-word;
+  background-color: #0C0C0E;
+  padding: 2.1rem 2.5rem;
 }
