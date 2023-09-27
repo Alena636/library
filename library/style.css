@@ -26,7 +26,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-image: url(../library/assets/img/background-library.jpg), linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0%, rgba(18.33, 18.33, 21.25, 0.10) 100%);
   background-size: 100%;
-  background-position-y: 40%;
+  background-position-y: 60%;
   background-repeat: no-repeat;
 }
 
@@ -76,6 +76,7 @@ body {
 
 .section__welcome {
   max-width: 1440px;
+  height: 37.5rem;
   margin: 0 auto;
 }
 
@@ -92,4 +93,65 @@ body {
   word-wrap: break-word;
   background-color: #0C0C0E;
   padding: 2.1rem 2.5rem;
+}
+
+.section__about {
+  max-width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.section-title {
+  padding: 1.25rem 0;
+  font-family: 'Forum';
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.section__title-line {
+  width: 3.1rem;
+}
+
+.section__wrapper {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.section__description {
+  line-height: 2.5rem;
+}
+
+.section__slider {
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.section__slider-img {
+  width: 28rem;
+  height: 35rem;
+}
+
+.section__slider-pagination {
+  padding: 2.5rem 0;
+  display: flex;
+  gap: .6rem;
+}
+
+.section__slider-pagination-item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #BB945F;
+  cursor: pointer;
 }
