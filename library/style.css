@@ -24,13 +24,13 @@ img {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-image: url(../library/assets/img/background-library.jpg), linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0%, rgba(18.33, 18.33, 21.25, 0.10) 100%);
-  background-size: 100%;
-  background-position-y: 60%;
-  background-repeat: no-repeat;
 }
 
 .header {
+  background-color: #0C0C0E;
+}
+
+.header__container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.25rem;
@@ -75,14 +75,18 @@ body {
 }
 
 .section__welcome {
-  max-width: 1440px;
+  background-image: url(../library/assets/img/background-library.jpg), linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0%, rgba(18.33, 18.33, 21.25, 0.10) 100%);
+  background-size: 100%;
+  background-origin: content-box;
+  background-position-y: 45%;
+  background-repeat: no-repeat;
   height: 37.5rem;
-  margin: 0 auto;
 }
 
 .welcome-title {
+  position: relative;
+  top: 10rem;
   width: 520px;
-  margin-top: 25vh;
   text-align: center;
   color: white;
   font-size: 2.5rem;
@@ -96,8 +100,6 @@ body {
 }
 
 .section__about {
-  max-width: 100vw;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,4 +156,140 @@ body {
   border-radius: 50%;
   background-color: #BB945F;
   cursor: pointer;
+}
+
+.section__favorites {
+  background-color: white;
+}
+
+.section__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section__seasons-wrapper {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.seasons-wrapper-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.seasons-wrapper-items {
+  display: flex;
+  gap: 5.6rem;
+}
+
+.seasons-wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.seasons-wrapper-item > input,
+.seasons-wrapper-item > label {
+  cursor: pointer;
+  appearance: none;
+}
+
+.seasons-wrapper-item > input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.seasons-wrapper-item > label:hover {
+  color: #BB945F;
+}
+
+.seasons-wrapper-item > input:checked::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  width: .4rem;
+  height: .4rem;
+  background-color: #0C0C0E;
+}
+
+.section__favorites-book {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border: 1px solid black;
+  padding: 1rem 1.25rem;
+}
+
+.section__favorites-book-staff-wrapper {
+  font-family: 'Forum';
+  text-transform: capitalize;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.book__staff-pick-line {
+  position: relative;
+  left: -43%;
+  width: 3.75rem;
+  border: 1px solid #BB945F;
+}
+
+.section__favorites-book-img {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 261%;
+  left: 28%;
+}
+
+.section__favorites-book-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  text-transform: capitalize;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.section__favorites-book-description {
+  width: 355px;
+  height: 320px;
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.section__favorites-book-btn {
+  width: 75px;
+  height: 30px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: white;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.section__favorites-book-btn:hover {
+  background-color: #BB945F;
 }

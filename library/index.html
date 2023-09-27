@@ -12,27 +12,31 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
-      <h1 class="header__logo-title">Brooklyn Public Library</h1>
-    </div>
-    <div class="header__wrapper">
-      <nav class="header__navigation">
-        <ul class="navigation__list">
-          <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">About</a></li>
-          <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Favorites</a></li>
-          <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Coffee shop</a></li>
-          <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Contacts</a></li>
-          <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Library Card</a></li>
-        </ul>
-      </nav>
-      <div class="header__profile">
-        <img class="header__profile-icon" src="../library/assets/icons/icon_profile.svg" alt="profile-icon" />
+    <div class="header__container">
+      <div class="header__logo">
+        <h1 class="header__logo-title">Brooklyn Public Library</h1>
+      </div>
+      <div class="header__wrapper">
+        <nav class="header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">About</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Favorites</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Coffee shop</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Contacts</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-item-link" href="#">Library Card</a></li>
+          </ul>
+        </nav>
+        <div class="header__profile">
+          <img class="header__profile-icon" src="../library/assets/icons/icon_profile.svg" alt="profile-icon" />
+        </div>
       </div>
     </div>
   </header>
   <main>
     <section class="section__welcome">
-      <p class="welcome-title">Welcome<br/>to the Brooklyn Library</p>
+      <div class="section__container">
+        <p class="welcome-title">Welcome<br/>to the Brooklyn Library</p>
+      </div>
     </section>
     <section class="section__about" id="about">
       <h2 class="section-title">About</h2>
@@ -49,6 +53,46 @@
         <span class="section__slider-pagination-item"></span>
         <span class="section__slider-pagination-item"></span>
         <span class="section__slider-pagination-item"></span>
+      </div>
+    </section>
+    <section class="section__favorites" id="favorites">
+      <div class="section__container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Favorites</h2>
+          <hr class="section__title-line"/>
+        </div>
+        <div class="section__seasons-wrapper">
+          <p class="seasons-wrapper-title">Pick favorites of season</p>
+          <div class="seasons-wrapper-items">
+            <div class="seasons-wrapper-item">
+              <input type="radio" id="seasonWinter" name="winter" value="winter" checked />
+              <label for="seasonWinter">Winter</label>
+            </div>
+            <div class="seasons-wrapper-item">
+              <input type="radio" id="seasonSpring" name="spring" value="spring" />
+              <label for="seasonSpring">Spring</label>
+            </div>
+            <div class="seasons-wrapper-item">
+              <input type="radio" id="seasonSummer" name="summer" value="summer" />
+              <label for="seasonSummer">Summer</label>
+            </div>
+            <div class="seasons-wrapper-item">
+              <input type="radio" id="seasonAutumn" name="autumn" value="autumn" />
+              <label for="seasonAutumn">Autumn</label>
+            </div>
+          </div>
+        </div>
+        <div class="section__favorites-books">
+          <div class="section__favorites-book">
+            <div class="section__favorites-book-staff-wrapper">
+              <p class="book__staff-pick">Staff Picks</p>
+              <hr class="book__staff-pick-line" />
+            </div>
+            <p class="section__favorites-book-title"><span class="title">The Book Eaters</span><br />By Sunyi Dean</p>
+            <p class="section__favorites-book-description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+            <button type="submit" class="section__favorites-book-btn">Buy</button>
+            <img class="section__favorites-book-img" src="../library/assets/img/book-1.jpg" alt="book" />
+          </div>
       </div>
     </section>
   </main>
