@@ -182,6 +182,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   word-wrap: break-word;
+  padding-top: 40px;
 }
 
 .seasons-wrapper-items {
@@ -226,11 +227,11 @@ body {
 }
 
 .section__favorites-books {
-  padding: 0 20px;
+  padding: 40px 20px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 260px;
+  gap: 40px 260px;
 }
 
 .section__favorites-book {
@@ -266,7 +267,7 @@ body {
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 265.5%;
+  top: 276.2%;
   left: 31%;
 }
 
@@ -275,11 +276,11 @@ body {
 }
 
 .book-3 {
-  top: 374.5%;
+  top: 355.9%;
 }
 
 .book-4 {
-  top: 374.5%;
+  top: 355.9%;
   left: 84%;
 }
 
