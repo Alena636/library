@@ -400,3 +400,68 @@ body {
   line-height: 40px;
   letter-spacing: 2px;
 }
+
+.section__contacts-info {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-info__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.text-info__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-info__number,
+.text-info__email {
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.number__link,
+.email__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+  transition: .6s;
+}
+
+.number__link:hover,
+.email__link:hover {
+  color: #BB945F;
+}
+
+.text-info__email {
+  padding-top: 20px;
+}
+
+.email__link {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.section__contacts-info__map {
+  width: 696px;
+  height: 414px;
+}
