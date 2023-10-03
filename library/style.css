@@ -225,12 +225,26 @@ body {
   background-color: #0C0C0E;
 }
 
+.section__favorites-books {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 260px;
+}
+
 .section__favorites-book {
   display: flex;
   flex-direction: column;
   width: 30vw;
   border: 1px solid black;
   padding: 1rem 1.25rem;
+  width: 550px;
+  height: 555px;
+}
+
+.hidden {
+  display: none;
 }
 
 .section__favorites-book-staff-wrapper {
@@ -252,8 +266,21 @@ body {
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 261%;
-  left: 28%;
+  top: 265.5%;
+  left: 31%;
+}
+
+.book-2 {
+  left: 84%;
+}
+
+.book-3 {
+  top: 374.5%;
+}
+
+.book-4 {
+  top: 374.5%;
+  left: 84%;
 }
 
 .section__favorites-book-title {
@@ -286,10 +313,22 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   background-color: white;
+  border: 1px solid #0C0C0E;
+  border-radius: 2px;
   cursor: pointer;
   transition: .7s;
 }
 
 .section__favorites-book-btn:hover {
   background-color: #BB945F;
+}
+
+.disabled {
+  border: 1px solid #BB945F;
+  color: #BB945F;
+  cursor: auto;
+}
+
+.disabled:hover {
+  background-color: white;
 }
