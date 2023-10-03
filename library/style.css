@@ -333,3 +333,70 @@ body {
 .disabled:hover {
   background-color: white;
 }
+
+.section_coffee-shop-description {
+  padding: 40px 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  color: black;
+}
+
+.section__coffe-shop__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 40px;
+}
+
+.menu__coffee-and-tea,
+.menu__desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu__desserts {
+  text-align: right;
+}
+
+.menu__coffee-and-tea__title,
+.menu__desserts__title {
+  color: #BB945F;
+  font-size: 40px;
+  font-family: 'Forum';
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.menu__coffee-and-tea__item-wrapper,
+.menu__desserts__item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.item__title {
+  width: 220px;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+.item__line {
+  border: 1px solid #BB945F;
+  height: 0;
+  width: 100px;
+}
+
+.item__price {
+  font-size: 20px;
+  font-family: 'Forum';
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
