@@ -465,3 +465,130 @@ body {
   width: 696px;
   height: 414px;
 }
+
+.section__library-card__card-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.card-info__find-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.find-card__title {
+  font-size: 30px;
+  letter-spacing: .6px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.find-card__wrapper {
+  width: 600px;
+  height: 386px;
+  border: 3px solid #BB945F;
+  padding: 20px 20px 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.find-card__body {
+  padding: 20px 20px 25px;
+  width: 560px;
+  height: 272px;
+  background-color: #BB945F;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__title {
+  font-size: 30px;
+  font-family: 'Forum';
+  line-height: 50px;
+  letter-spacing: .6px;
+  word-wrap: break-word;
+}
+
+.card__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__input {
+  color: #8E8E8E;
+  font-size: 30px;
+  font-family: 'Forum';
+  line-height: 50px;
+  letter-spacing: .6px;
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+.find-card__btn {
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  background-color: white;
+  margin: 0 auto;
+  width: 242px;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.find-card__btn:hover {
+  border: #BB945F;
+  background-color: #BB945F;
+}
+
+.card-info__get-card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 35px;
+  text-align: right;
+}
+
+.get-card__title {
+  font-size: 30px;
+  font-family: 'Forum';
+  letter-spacing: .6px;
+}
+
+.get-card__description {
+  width: 456px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: .4px;
+}
+
+.get-card__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.get-card__btn {
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  background-color: white;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.get-card__btn:hover {
+  background-color: #BB945F;
+  border: #BB945F;
+}
