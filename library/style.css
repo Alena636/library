@@ -41,8 +41,9 @@ body {
 }
 
 .header__logo-title {
+  font-size: 30px;
   font-family: 'Forum';
-  line-height: 3.1rem;
+  line-height: 50px;
   letter-spacing: .6px;
   word-wrap: break-word;
 }
@@ -59,8 +60,8 @@ body {
 }
 
 .navigation__list-item {
-  font-size: 1.25rem;
-  line-height: 3.1rem;
+  font-size: 20px;
+  line-height: 50px;
   word-wrap: break-word;
 }
 
@@ -85,15 +86,16 @@ body {
 
 .welcome-title {
   position: relative;
-  top: 10rem;
+  top: 13.8rem;
+  left: 2.2rem;
   width: 520px;
   text-align: center;
   color: white;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: 'Forum';
   text-transform: uppercase;
   letter-spacing: 3px;
-  line-height: 3.1rem;
+  line-height: 50px;
   word-wrap: break-word;
   background-color: #0C0C0E;
   padding: 2.1rem 2.5rem;
@@ -108,7 +110,7 @@ body {
 }
 
 .section-title {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 .8rem;
   font-family: 'Forum';
   font-size: 2.5rem;
   text-transform: capitalize;
@@ -122,7 +124,7 @@ body {
 }
 
 .section__wrapper {
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +132,7 @@ body {
 }
 
 .section__description {
+  font-size: 20px;
   line-height: 2.5rem;
 }
 
@@ -182,12 +185,12 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   word-wrap: break-word;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .seasons-wrapper-items {
   display: flex;
-  gap: 5.6rem;
+  gap: 84px;
 }
 
 .seasons-wrapper-item {
@@ -256,9 +259,14 @@ body {
   word-wrap: break-word;
 }
 
+.book__staff-pick {
+  font-size: 20px;
+}
+
 .book__staff-pick-line {
   position: relative;
-  left: -43%;
+  top: -12px;
+  left: -44%;
   width: 3.75rem;
   border: 1px solid #BB945F;
 }
@@ -267,27 +275,27 @@ body {
   width: 200px;
   height: 300px;
   position: absolute;
-  top: 276.2%;
-  left: 31%;
+  top: 272%;
+  left: 29.6%;
 }
 
 .book-2 {
-  left: 84%;
+  left: 83%;
 }
 
 .book-3 {
-  top: 355.9%;
+  top: 351.6%;
 }
 
 .book-4 {
-  top: 355.9%;
-  left: 84%;
+  top: 351.6%;
+  left: 83%;
 }
 
 .section__favorites-book-title {
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 40px;
   letter-spacing: 2px;
   word-wrap: break-word;
   text-transform: capitalize;
@@ -298,6 +306,7 @@ body {
 }
 
 .section__favorites-book-description {
+  padding-top: 20px;
   width: 355px;
   height: 320px;
   font-size: 15px;
@@ -308,6 +317,7 @@ body {
 }
 
 .section__favorites-book-btn {
+  margin-top: 35px;
   width: 75px;
   height: 30px;
   font-size: 10px;
@@ -335,7 +345,7 @@ body {
 }
 
 .section_coffee-shop-description {
-  padding: 40px 20px;
+  padding: 30px 20px 40px;
   font-size: 20px;
   text-align: center;
   line-height: 40px;
@@ -375,11 +385,11 @@ body {
 .menu__desserts__item-wrapper {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 18px;
 }
 
 .item__title {
-  width: 220px;
+  width: 240px;
   font-size: 20px;
   text-transform: capitalize;
   line-height: 40px;
@@ -394,6 +404,7 @@ body {
 }
 
 .item__price {
+  padding-left: 40px;
   font-size: 20px;
   font-family: 'Forum';
   text-transform: capitalize;
@@ -401,8 +412,13 @@ body {
   letter-spacing: 2px;
 }
 
+.dessert {
+  padding-right: 40px;
+  width: 310px;
+}
+
 .section__contacts-info {
-  padding: 40px 20px;
+  padding: 30px 20px 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -413,7 +429,8 @@ body {
   gap: 40px;
 }
 
-.text-info__title {
+.text-info__title,
+.text-info__title-email {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
@@ -427,8 +444,14 @@ body {
   gap: 20px;
 }
 
+.text-info__email-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .text-info__number,
-.text-info__email {
+.text-info__email-link {
   font-size: 20px;
   text-transform: capitalize;
   line-height: 40px;
@@ -469,13 +492,13 @@ body {
 .section__library-card__card-info {
   display: flex;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 30px 20px 42px;
 }
 
 .card-info__find-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .find-card__title {
@@ -489,10 +512,10 @@ body {
   width: 600px;
   height: 386px;
   border: 3px solid #BB945F;
-  padding: 20px 20px 94px;
+  padding: 20px 18px 96px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
 }
 
 .find-card__body {
@@ -502,7 +525,7 @@ body {
   background-color: #BB945F;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .card__title {
@@ -516,7 +539,7 @@ body {
 .card__inputs {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .card__input {
@@ -552,7 +575,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 35px;
+  gap: 36px;
   text-align: right;
 }
 
@@ -606,7 +629,7 @@ body {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .footer__links {
@@ -642,7 +665,7 @@ body {
 }
 
 .footer__rss {
-  padding-top: 44px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
   color: white;
