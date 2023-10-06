@@ -539,7 +539,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
-  transition: .6s;
+  transition: .7s;
   cursor: pointer;
 }
 
@@ -584,11 +584,79 @@ body {
   border-radius: 2px;
   border: 1px solid #0C0C0E;
   background-color: white;
-  transition: .6s;
+  transition: .7s;
   cursor: pointer;
 }
 
 .get-card__btn:hover {
   background-color: #BB945F;
   border: #BB945F;
+}
+
+.footer {
+  background-color: #0C0C0E;
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 20px 20px 44px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.link__address {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.links__social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.link__social-media:hover {
+  transform: scale(1.1);
+}
+
+.footer__work-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer__rss {
+  padding-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.rss__link {
+  text-decoration: none;
+  color: white;
+  transition: .7s;
+}
+
+.rss__link:hover {
+  color: #BB945F;
 }
