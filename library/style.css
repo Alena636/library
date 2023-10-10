@@ -88,6 +88,14 @@ body {
     overflow: hidden;
   }
 
+  .header__container {
+    padding: 1.25rem 0 1.25rem 1.25rem;
+  }
+
+  .header__wrapper {
+    gap: 2.5rem;
+  }
+
   .navigation__list {
     position: fixed;
     max-width: 333px;
@@ -147,7 +155,7 @@ body {
     width: calc(100% - 330px);
     height: 100%;
     background-color: rgba(18.33, 18.33, 21.25, 0.10);
-    transform: translateX(200%);
+    transform: translateX(-300%);
     transition: 1s;
     z-index: 2;
   }
@@ -224,11 +232,15 @@ body {
   line-height: 2.5rem;
 }
 
-.section__slider {
+.section__slider-container {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+}
+
+.section__slider-arrow {
+  display: none;
 }
 
 .section__slider-img {
@@ -448,6 +460,7 @@ body {
 .section__coffe-shop__menu {
   display: flex;
   justify-content: space-between;
+  gap: 2.5rem 0;
   flex-wrap: wrap;
   padding: 0px 1.25rem 2.5rem;
 }
@@ -514,6 +527,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 6.25rem 0;
 }
 
 .text-info {
@@ -778,4 +792,66 @@ body {
 
 .rss__link:hover {
   color: #BB945F;
+}
+
+@media screen and (max-width: 768px) {
+  .section__welcome {
+    background-position-y: 0%;
+  }
+
+  .section__description {
+    text-align: center;
+  }
+
+  .section__slider {
+    display: flex;
+    gap: 3.62rem;
+  }
+
+  .section__slider-arrow {
+    display: block;
+    cursor: pointer;
+  }
+
+  .right {
+    transform: rotate(180deg);
+  }
+
+  .section__slider-img:nth-of-type(2),
+  .section__slider-img:nth-of-type(3) {
+    display: none;
+  }
+
+  .section__favorites-books {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__coffe-shop__menu {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .menu__coffee-and-tea {
+    justify-self: start;
+  }
+
+  .menu__desserts {
+    justify-self: end;
+  }
+
+  .section__library-card__card-info {
+    justify-content: center;
+  }
+
+  .card-info__get-card {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .section__favorites-book-img {
+    width: 10rem;
+  }
 }
