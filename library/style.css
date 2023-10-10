@@ -75,6 +75,94 @@ body {
   color: #BB945F;
 }
 
+.header__burger-menu {
+  display: none;
+}
+
+.header__overlay {
+  display: none;
+}
+
+@media screen and (max-width: 996px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .navigation__list {
+    position: fixed;
+    max-width: 333px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 100px 107px;
+    transition: .8s;
+    background-color: black;
+    z-index: 2;
+  }
+
+  .navigation__list.active {
+    right: 0;
+  }
+
+  .header__burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .burger-menu__item {
+    width: 45px;
+    border: 1px solid white;
+    transition: all .6s;
+  }
+
+  .header__burger-menu.active {
+    gap: 0px;
+  }
+
+  .header__burger-menu.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .header__burger-menu.active span:nth-of-type(2) {
+    transform: rotate(45deg);
+  }
+
+  .header__burger-menu.active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+
+  .header__overlay {
+    top: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    width: calc(100% - 330px);
+    height: 100%;
+    background-color: rgba(18.33, 18.33, 21.25, 0.10);
+    transform: translateX(200%);
+    transition: 1s;
+    z-index: 2;
+  }
+
+  .header__overlay.active {
+    transform: translateX(0%);
+    transition: 1s;
+    left: 0;
+  }
+
+  .header__profile {
+    z-index: 3;
+  }
+}
+
 .section__welcome {
   background-image: url(../library/assets/img/background-library.jpg), linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0%, rgba(18.33, 18.33, 21.25, 0.10) 100%);
   background-size: 100%;
@@ -88,7 +176,7 @@ body {
   position: relative;
   top: 13.8rem;
   left: 2.2rem;
-  width: 520px;
+  width: 32.5rem;
   text-align: center;
   color: white;
   font-size: 40px;
@@ -139,6 +227,7 @@ body {
 .section__slider {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -190,7 +279,8 @@ body {
 
 .seasons-wrapper-items {
   display: flex;
-  gap: 84px;
+  gap: 5.25rem;
+  flex-wrap: wrap;
 }
 
 .seasons-wrapper-item {
@@ -230,11 +320,11 @@ body {
 }
 
 .section__favorites-books {
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 260px;
+  gap: 2.5rem 16.25rem;
 }
 
 .section__favorites-book {
@@ -244,8 +334,8 @@ body {
   width: 30vw;
   border: 1px solid black;
   padding: 1rem 1.25rem;
-  width: 550px;
-  height: 555px;
+  width: 34.4rem;
+  height: 34.7rem;
 }
 
 .hidden {
@@ -273,8 +363,8 @@ body {
 }
 
 .section__favorites-book-img {
-  width: 200px;
-  height: 300px;
+  width: 12.5rem;
+  height: 18.75rem;
   position: absolute;
   top: 46%;
   left: 71%;
@@ -346,8 +436,8 @@ body {
 }
 
 .section_coffee-shop-description {
-  padding: 30px 20px 40px;
-  font-size: 20px;
+  padding: 1.87rem 1.25rem 2.5rem;
+  font-size: 1.25rem;
   text-align: center;
   line-height: 40px;
   letter-spacing: 2px;
@@ -358,14 +448,15 @@ body {
 .section__coffe-shop__menu {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px 40px;
+  flex-wrap: wrap;
+  padding: 0px 1.25rem 2.5rem;
 }
 
 .menu__coffee-and-tea,
 .menu__desserts {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .menu__desserts {
@@ -375,7 +466,7 @@ body {
 .menu__coffee-and-tea__title,
 .menu__desserts__title {
   color: #BB945F;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Forum';
   text-transform: capitalize;
   line-height: 40px;
@@ -390,8 +481,8 @@ body {
 }
 
 .item__title {
-  width: 240px;
-  font-size: 20px;
+  width: 15rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
   line-height: 40px;
   letter-spacing: 2px;
@@ -401,12 +492,12 @@ body {
 .item__line {
   border: 1px solid #BB945F;
   height: 0;
-  width: 100px;
+  width: 6.25rem;
 }
 
 .item__price {
-  padding-left: 40px;
-  font-size: 20px;
+  padding-left: 2.5rem;
+  font-size: 1.25rem;
   font-family: 'Forum';
   text-transform: capitalize;
   line-height: 40px;
@@ -414,7 +505,7 @@ body {
 }
 
 .dessert {
-  padding-right: 40px;
+  padding-right: 2.5rem;
   width: 310px;
 }
 
@@ -422,17 +513,18 @@ body {
   padding: 30px 20px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .text-info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .text-info__title,
 .text-info__title-email {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 40px;
@@ -442,18 +534,18 @@ body {
 .text-info__numbers {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .text-info__email-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .text-info__number,
 .text-info__email-link {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
   line-height: 40px;
   letter-spacing: 2px;
@@ -464,7 +556,7 @@ body {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
   line-height: 40px;
   letter-spacing: 2px;
@@ -477,7 +569,7 @@ body {
 }
 
 .text-info__email {
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 .email__link {
@@ -493,6 +585,8 @@ body {
 .section__library-card__card-info {
   display: flex;
   justify-content: space-between;
+  gap: 1.25rem 0;
+  flex-wrap: wrap;
   padding: 30px 20px 42px;
 }
 
@@ -503,15 +597,15 @@ body {
 }
 
 .find-card__title {
-  font-size: 30px;
+  font-size: 1.87rem;
   letter-spacing: .6px;
   word-wrap: break-word;
   text-align: center;
 }
 
 .find-card__wrapper {
-  width: 600px;
-  height: 386px;
+  width: 37.5rem;
+  height: 24.1rem;
   border: 3px solid #BB945F;
   padding: 20px 18px 96px;
   display: flex;
@@ -530,7 +624,7 @@ body {
 }
 
 .card__title {
-  font-size: 30px;
+  font-size: 1.87rem;
   font-family: 'Forum';
   line-height: 50px;
   letter-spacing: .6px;
@@ -540,12 +634,12 @@ body {
 .card__inputs {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .card__input {
   color: #8E8E8E;
-  font-size: 30px;
+  font-size: 1.87rem;
   font-family: 'Forum';
   line-height: 50px;
   letter-spacing: .6px;
@@ -560,7 +654,7 @@ body {
   margin: 0 auto;
   width: 242px;
   padding: 10px 40px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1px;
   transition: .7s;
@@ -581,21 +675,22 @@ body {
 }
 
 .get-card__title {
-  font-size: 30px;
+  font-size: 1.87rem;
   font-family: 'Forum';
   letter-spacing: .6px;
 }
 
 .get-card__description {
-  width: 456px;
-  font-size: 20px;
+  width: 28.5rem;
+  font-size: 1.25rem;
+  word-wrap: break-word;
   line-height: 40px;
   letter-spacing: .4px;
 }
 
 .get-card__btns {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .get-card__btn {
